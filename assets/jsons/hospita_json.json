@@ -1,0 +1,122 @@
+[
+  {
+    "hId": "01",
+    "hName": "Hospital 1",
+    "drList": [
+      {
+        "drId": "01",
+        "drName": "Doctor Name 1",
+        "rxList": [
+          {
+            "rxId": "01",
+            "rxName": "Prescription 1"
+          },
+          {
+            "rxId": "02",
+            "rxName": "Prescription 2"
+          },
+          {
+            "rxId": "03",
+            "rxName": "Prescription 3"
+          }
+        ]
+      },
+      {
+        "drId": "02",
+        "drName": "Doctor Name 2",
+        "rxList": [
+          {
+            "rxId": "04",
+            "rxName": "Prescription 4"
+          },
+          {
+            "rxId": "05",
+            "rxName": "Prescription 5"
+          },
+          {
+            "rxId": "06",
+            "rxName": "Prescription 6"
+          }
+        ]
+      },
+      {
+        "drId": "03",
+        "drName": "Doctor Name 3",
+        "rxList": [
+          {
+            "rxId": "07",
+            "rxName": "Prescription 7"
+          },
+          {
+            "rxId": "08",
+            "rxName": "Prescription 8"
+          },
+          {
+            "rxId": "09",
+            "rxName": "Prescription 9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "hId": "02",
+    "hName": "Hospital 2",
+    "drList": [
+      {
+        "drId": "04",
+        "drName": "Doctor Name 4",
+        "rxList": [
+          {
+            "rxId": "10",
+            "rxName": "Prescription 10"
+          },
+          {
+            "rxId": "11",
+            "rxName": "Prescription 11"
+          },
+          {
+            "rxId": "12",
+            "rxName": "Prescription 12"
+          }
+        ]
+      },
+      {
+        "drId": "05",
+        "drName": "Doctor Name 5",
+        "rxList": [
+          {
+            "rxId": "13",
+            "rxName": "Prescription 13"
+          },
+          {
+            "rxId": "14",
+            "rxName": "Prescription 14"
+          },
+          {
+            "rxId": "15",
+            "rxName": "Prescription 15"
+          }
+        ]
+      },
+      {
+        "drId": "06",
+        "drName": "Doctor Name 6",
+        "rxList": [
+          {
+            "rxId": "16",
+            "rxName": "Prescription 16"
+          },
+          {
+            "rxId": "17",
+            "rxName": "Prescription 17"
+          },
+          {
+            "rxId": "18",
+            "rxName": "Prescription 18"
+          }
+        ]
+      }
+    ]
+  }
+]
