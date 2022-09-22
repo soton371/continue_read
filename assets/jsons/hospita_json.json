@@ -9,15 +9,30 @@
         "rxList": [
           {
             "rxId": "01",
-            "rxName": "Prescription 1"
+            "rxName": "Prescription 1",
+            "division": "Division1",
+            "district": "District1",
+            "thana": "Thana1",
+            "performer": "Performer1",
+            "performerId": "PerformerId1"
           },
           {
             "rxId": "02",
-            "rxName": "Prescription 2"
+            "rxName": "Prescription 2",
+            "division": "Division2",
+            "district": "District2",
+            "thana": "Thana2",
+            "performer": "Performer2",
+            "performerId": "PerformerId2"
           },
           {
             "rxId": "03",
-            "rxName": "Prescription 3"
+            "rxName": "Prescription 3",
+            "division": "Division3",
+            "district": "District3",
+            "thana": "Thana3",
+            "performer": "Performer3",
+            "performerId": "PerformerId3"
           }
         ]
       },
@@ -27,15 +42,30 @@
         "rxList": [
           {
             "rxId": "04",
-            "rxName": "Prescription 4"
+            "rxName": "Prescription 4",
+            "division": "Division4",
+            "district": "District4",
+            "thana": "Thana4",
+            "performer": "Performer4",
+            "performerId": "PerformerId4"
           },
           {
             "rxId": "05",
-            "rxName": "Prescription 5"
+            "rxName": "Prescription 5",
+            "division": "Division5",
+            "district": "District5",
+            "thana": "Thana5",
+            "performer": "Performer5",
+            "performerId": "PerformerId5"
           },
           {
             "rxId": "06",
-            "rxName": "Prescription 6"
+            "rxName": "Prescription 6",
+            "division": "Division6",
+            "district": "District6",
+            "thana": "Thana6",
+            "performer": "Performer6",
+            "performerId": "PerformerId6"
           }
         ]
       },
@@ -45,15 +75,30 @@
         "rxList": [
           {
             "rxId": "07",
-            "rxName": "Prescription 7"
+            "rxName": "Prescription 7",
+            "division": "Division7",
+            "district": "District7",
+            "thana": "Thana7",
+            "performer": "Performer7",
+            "performerId": "PerformerId7"
           },
           {
             "rxId": "08",
-            "rxName": "Prescription 8"
+            "rxName": "Prescription 8",
+            "division": "Division8",
+            "district": "District8",
+            "thana": "Thana8",
+            "performer": "Performer8",
+            "performerId": "PerformerId8"
           },
           {
             "rxId": "09",
-            "rxName": "Prescription 9"
+            "rxName": "Prescription 9",
+            "division": "Division9",
+            "district": "District9",
+            "thana": "Thana9",
+            "performer": "Performer9",
+            "performerId": "PerformerId9"
           }
         ]
       }
@@ -69,15 +114,30 @@
         "rxList": [
           {
             "rxId": "10",
-            "rxName": "Prescription 10"
+            "rxName": "Prescription 10",
+            "division": "Division10",
+            "district": "District10",
+            "thana": "Thana10",
+            "performer": "Performer10",
+            "performerId": "PerformerId10"
           },
           {
             "rxId": "11",
-            "rxName": "Prescription 11"
+            "rxName": "Prescription 11",
+            "division": "Division11",
+            "district": "District11",
+            "thana": "Thana11",
+            "performer": "Performer11",
+            "performerId": "PerformerId11"
           },
           {
             "rxId": "12",
-            "rxName": "Prescription 12"
+            "rxName": "Prescription 12",
+            "division": "Division12",
+            "district": "District12",
+            "thana": "Thana12",
+            "performer": "Performer12",
+            "performerId": "PerformerId12"
           }
         ]
       },
@@ -87,15 +147,30 @@
         "rxList": [
           {
             "rxId": "13",
-            "rxName": "Prescription 13"
+            "rxName": "Prescription 13",
+            "division": "Division13",
+            "district": "District13",
+            "thana": "Thana13",
+            "performer": "Performer13",
+            "performerId": "PerformerId13"
           },
           {
             "rxId": "14",
-            "rxName": "Prescription 14"
+            "rxName": "Prescription 14",
+            "division": "Division14",
+            "district": "District14",
+            "thana": "Thana14",
+            "performer": "Performer14",
+            "performerId": "PerformerId14"
           },
           {
             "rxId": "15",
-            "rxName": "Prescription 15"
+            "rxName": "Prescription 15",
+            "division": "Division15",
+            "district": "District15",
+            "thana": "Thana15",
+            "performer": "Performer15",
+            "performerId": "PerformerId15"
           }
         ]
       },
@@ -105,15 +180,30 @@
         "rxList": [
           {
             "rxId": "16",
-            "rxName": "Prescription 16"
+            "rxName": "Prescription 16",
+            "division": "Division16",
+            "district": "District16",
+            "thana": "Thana16",
+            "performer": "Performer16",
+            "performerId": "PerformerId16"
           },
           {
             "rxId": "17",
-            "rxName": "Prescription 17"
+            "rxName": "Prescription 17",
+            "division": "Division17",
+            "district": "District17",
+            "thana": "Thana17",
+            "performer": "Performer17",
+            "performerId": "PerformerId17"
           },
           {
             "rxId": "18",
-            "rxName": "Prescription 18"
+            "rxName": "Prescription 18",
+            "division": "Division18",
+            "district": "District18",
+            "thana": "Thana18",
+            "performer": "Performer18",
+            "performerId": "PerformerId18"
           }
         ]
       }
