@@ -3,7 +3,9 @@ import 'package:get/get.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
 class PresController extends GetxController{
-  List<RxModel> hospitalList = [];
+
+  List<RxModel> hospitalList = []; //all data here
+  List<RxModel> readResponse = []; //expand and already viewed
 
   @override
   void onInit() {
