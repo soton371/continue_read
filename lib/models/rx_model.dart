@@ -10,88 +10,193 @@ String rxModelToJson(List<RxModel> data) => json.encode(List<dynamic>.from(data.
 
 class RxModel {
   RxModel({
-    this.hId,
-    this.hName,
-    this.drList,
+    required this.udHospitalId,
+    required this.hosCareName,
+    required this.hcpMobNo,
+    required this.hcpAddress,
+    required this.isSelect,
+    required this.drList,
+    required this.divisionName,
+    required this.districtName,
+    required this.thanaName,
   });
 
-  String? hId;
-  String? hName;
-  List<DrList>? drList;
+  String udHospitalId;
+  String hosCareName;
+  String hcpMobNo;
+  String hcpAddress;
+  bool isSelect;
+  List<DrList> drList;
+  String divisionName;
+  String districtName;
+  String thanaName;
 
   factory RxModel.fromJson(Map<String, dynamic> json) => RxModel(
-    hId: json["hId"] == null ? null : json["hId"],
-    hName: json["hName"] == null ? null : json["hName"],
-    drList: json["drList"] == null ? null : List<DrList>.from(json["drList"].map((x) => DrList.fromJson(x))),
+    udHospitalId: json["udHospitalId"],
+    hosCareName: json["hosCareName"],
+    hcpMobNo: json["hcpMobNo"],
+    hcpAddress: json["hcpAddress"],
+    isSelect: json["isSelect"],
+    drList: List<DrList>.from(json["drList"].map((x) => DrList.fromJson(x))),
+    divisionName: json["divisionName"],
+    districtName: json["districtName"],
+    thanaName: json["thanaName"],
   );
 
   Map<String, dynamic> toJson() => {
-    "hId": hId == null ? null : hId,
-    "hName": hName == null ? null : hName,
-    "drList": drList == null ? null : List<dynamic>.from(drList!.map((x) => x.toJson())),
+    "udHospitalId": udHospitalId,
+    "hosCareName": hosCareName,
+    "hcpMobNo": hcpMobNo,
+    "hcpAddress": hcpAddress,
+    "isSelect": isSelect,
+    "drList": List<dynamic>.from(drList.map((x) => x.toJson())),
+    "divisionName": divisionName,
+    "districtName": districtName,
+    "thanaName": thanaName,
   };
 }
 
+
 class DrList {
   DrList({
-    this.drId,
-    this.drName,
-    this.rxList,
+    required this.userDhcgNo,
+    required this.drName,
+    required this.drDegree,
+    required this.speciality,
+    required this.isSelect,
+    required this.rxList,
   });
 
-  String? drId;
-  String? drName;
-  List<RxList>? rxList;
+  String userDhcgNo;
+  String drName;
+  String drDegree;
+  String speciality;
+  bool isSelect;
+  List<RxList> rxList;
 
   factory DrList.fromJson(Map<String, dynamic> json) => DrList(
-    drId: json["drId"] == null ? null : json["drId"],
-    drName: json["drName"] == null ? null : json["drName"],
-    rxList: json["rxList"] == null ? null : List<RxList>.from(json["rxList"].map((x) => RxList.fromJson(x))),
+    userDhcgNo: json["userDHCGNo"],
+    drName: json["drName"],
+    drDegree: json["drDegree"],
+    speciality: json["speciality"],
+    isSelect: json["isSelect"],
+    rxList: List<RxList>.from(json["rxList"].map((x) => RxList.fromJson(x))),
   );
 
   Map<String, dynamic> toJson() => {
-    "drId": drId == null ? null : drId,
-    "drName": drName == null ? null : drName,
-    "rxList": rxList == null ? null : List<dynamic>.from(rxList!.map((x) => x.toJson())),
+    "userDHCGNo": userDhcgNo,
+    "drName": drName,
+    "drDegree": drDegree,
+    "speciality": speciality,
+    "isSelect": isSelect,
+    "rxList": List<dynamic>.from(rxList.map((x) => x.toJson())),
   };
 }
 
 class RxList {
   RxList({
-    this.rxId,
-    this.rxName,
-    this.division,
-    this.district,
-    this.thana,
-    this.performer,
-    this.performerId,
+    required this.feedBackMstId,
+    required this.feedBackCreateDt,
+    required this.submitDt,
+    required this.userDhcgNo,
+    required this.udHospitalId,
+    required this.hosCareName,
+    required this.totalProd,
+    required this.feedbackSendBy,
+    required this.drName,
+    required this.hcpRegNo,
+    required this.hcpMobNo,
+    required this.hcpAddress,
+    required this.drDegree,
+    required this.speciality,
+    required this.udMsRxNo,
+    required this.evfcFg,
+    required this.imgLink,
+    required this.medDetails,
+    required this.isSelect,
+    required this.divisionName,
+    required this.districtName,
+    required this.thanaName,
+    required this.performerName,
+    required this.performDate,
   });
 
-  String? rxId;
-  String? rxName;
-  String? division;
-  String? district;
-  String? thana;
-  String? performer;
-  String? performerId;
+  int feedBackMstId;
+  String feedBackCreateDt;
+  String submitDt;
+  String userDhcgNo;
+  String udHospitalId;
+  String hosCareName;
+  int totalProd;
+  String feedbackSendBy;
+  String drName;
+  String hcpRegNo;
+  String hcpMobNo;
+  String hcpAddress;
+  String drDegree;
+  String speciality;
+  String udMsRxNo;
+  int evfcFg;
+  String imgLink;
+  String medDetails;
+  bool isSelect;
+  String divisionName;
+  String districtName;
+  String thanaName;
+  String performerName;
+  String performDate;
 
   factory RxList.fromJson(Map<String, dynamic> json) => RxList(
-    rxId: json["rxId"] == null ? null : json["rxId"],
-    rxName: json["rxName"] == null ? null : json["rxName"],
-    division: json["division"] == null ? null : json["division"],
-    district: json["district"] == null ? null : json["district"],
-    thana: json["thana"] == null ? null : json["thana"],
-    performer: json["performer"] == null ? null : json["performer"],
-    performerId: json["performerId"] == null ? null : json["performerId"],
+    feedBackMstId: json["feedBackMstId"],
+    feedBackCreateDt: json["feedBackCreateDT"],
+    submitDt: json["submitDT"],
+    userDhcgNo: json["userDHCGNo"],
+    udHospitalId: json["udHospitalId"],
+    hosCareName: json["hosCareName"],
+    totalProd: json["totalProd"],
+    feedbackSendBy: json["feedbackSendBy"],
+    drName: json["drName"],
+    hcpRegNo: json["hcpRegNo"]??'',
+    hcpMobNo: json["hcpMobNo"],
+    hcpAddress: json["hcpAddress"],
+    drDegree: json["drDegree"],
+    speciality: json["speciality"],
+    udMsRxNo: json["udMsRXNo"],
+    evfcFg: json["evfcFg"],
+    imgLink: json["imgLink"],
+    medDetails: json["medDetails"],
+    isSelect: json["isSelect"],
+    divisionName: json["divisionName"],
+    districtName: json["districtName"],
+    thanaName: json["thanaName"],
+    performerName: json["performerName"],
+    performDate: json["performDate"],
   );
 
   Map<String, dynamic> toJson() => {
-    "rxId": rxId == null ? null : rxId,
-    "rxName": rxName == null ? null : rxName,
-    "division": division == null ? null : division,
-    "district": district == null ? null : district,
-    "thana": thana == null ? null : thana,
-    "performer": performer == null ? null : performer,
-    "performerId": performerId == null ? null : performerId,
+    "feedBackMstId": feedBackMstId,
+    "feedBackCreateDT": feedBackCreateDt,
+    "submitDT": submitDt,
+    "userDHCGNo": userDhcgNo,
+    "udHospitalId": udHospitalId,
+    "hosCareName": hosCareName,
+    "totalProd": totalProd,
+    "feedbackSendBy": feedbackSendBy,
+    "drName": drName,
+    "hcpRegNo": hcpRegNo,
+    "hcpMobNo": hcpMobNo,
+    "hcpAddress": hcpAddress,
+    "drDegree": drDegree,
+    "speciality": speciality,
+    "udMsRXNo": udMsRxNo,
+    "evfcFg": evfcFg,
+    "imgLink": imgLink,
+    "medDetails": medDetails,
+    "isSelect": isSelect,
+    "divisionName": divisionName,
+    "districtName": districtName,
+    "thanaName": thanaName,
+    "performerName": performerName,
+    "performDate": performDate,
   };
 }

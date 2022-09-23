@@ -10,7 +10,6 @@ class RxScreen extends StatefulWidget {
 }
 
 class _RxScreenState extends State<RxScreen> {
-  final PresController _controller=Get.put(PresController());
 
   @override
   Widget build(BuildContext context) {
@@ -20,12 +19,41 @@ class _RxScreenState extends State<RxScreen> {
       ),
       body: GetBuilder<PresController>(
           builder: (snap){
-            return snap.responseList.isNotEmpty? ListView.builder(
-              itemCount: snap.responseList.length,
+            return snap.hospitalList.isNotEmpty? ListView.builder(
+              itemCount: snap.hospitalList.length,
                 itemBuilder: (_,h){
-                  var data = snap.responseList;
-                  return ListTile(
-                    title: Text(data[h].hName.toString()),
+                  dynamic hospital = snap.hospitalList[h].hosCareName;
+                  return Card(
+                    child: Column(
+                      children: [
+                        //start hospital
+                        ListTile(
+                          title: Text(hospital),
+                        ),
+                        //end hospital
+
+                        //start doctor
+
+                        ListView.builder(
+                          shrinkWrap: true,
+                            itemCount: snap.hospitalList[h].drList.length,
+                            itemBuilder: (_,d){
+                            dynamic dr = snap.hospitalList[h].drList[d];
+                            return Column(
+                              children: [
+                                ListTile(
+                                  title: Text(dr),
+                                ),
+                              ],
+                            );
+                            }
+                        )
+
+
+                        //end doctor
+
+                      ],
+                    ),
                   );
                 }
             ):const Center(child: CircularProgressIndicator(),);
